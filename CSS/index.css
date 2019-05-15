@@ -179,6 +179,7 @@ nav {
   display: flex;
   justify-content: space-around;
   font-size: 3rem;
+  align-items: center;
 }
 nav img {
   max-width: 10rem;
