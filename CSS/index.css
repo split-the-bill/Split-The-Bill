@@ -188,3 +188,7 @@ nav img {
 nav a {
   text-decoration: none;
 }
+p {
+  position: sticky;
+  text-align: center;
+}
