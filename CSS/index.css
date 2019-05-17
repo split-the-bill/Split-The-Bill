@@ -164,16 +164,9 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
-}
-.background-img {
-  position: absolute;
-  z-index: 2;
-  opacity: 0.3;
-  height: auto;
-  max-width: 100%;
 }
 nav {
   display: flex;
@@ -187,6 +180,41 @@ nav img {
 }
 nav a {
   text-decoration: none;
+}
+.background-img {
+  position: absolute;
+  z-index: -2;
+  opacity: 0.5;
+  height: 50%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+}
+.header {
+  padding: 60px 0;
+  text-align: center;
+}
+.header h1 {
+  padding: 20px 0;
+}
+.header h2 {
+  padding: 20px 0;
+}
+.header button {
+  margin: 40px 0 0 0;
+  border: 0;
+  color: white;
+  font-size: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 0;
+  background: linear-gradient(aqua, green);
+}
+.header button:hover {
+  background: linear-gradient(green, aqua);
 }
 p {
   position: sticky;
