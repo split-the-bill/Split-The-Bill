@@ -223,6 +223,8 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 30px;
 }
 .examplerow .img {
   width: 48%;
@@ -230,6 +232,9 @@ nav a {
 .examplerow .example {
   width: 48%;
   margin: auto 0;
+}
+.examplerow .example p {
+  text-align: left;
 }
 p {
   position: sticky;
