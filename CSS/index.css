@@ -236,7 +236,35 @@ nav a {
 .examplerow .example p {
   text-align: left;
 }
+h2 {
+  text-align: center;
+}
 p {
   position: sticky;
   text-align: center;
+}
+.unfooter {
+  text-align: center;
+}
+.unfooter img {
+  height: auto;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unfooter button {
+  margin: 40px 0 0 0;
+  border: 0;
+  color: white;
+  font-size: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 0;
+  background: linear-gradient(aqua, green);
+  margin: 40px 0;
+  padding: 15px 25px;
+}
+.unfooter button:hover {
+  background: linear-gradient(green, aqua);
 }
