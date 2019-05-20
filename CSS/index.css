@@ -185,7 +185,7 @@ nav a {
   position: absolute;
   z-index: -2;
   opacity: 0.5;
-  height: 50%;
+  height: 43%;
   margin-top: 60px;
   padding-bottom: 10px;
   margin-left: auto;
@@ -195,7 +195,7 @@ nav a {
   max-width: 100%;
 }
 .header {
-  padding: 60px 0;
+  padding: 60px 0 75px 0;
   text-align: center;
   border-bottom: 1px solid lightgray;
 }
