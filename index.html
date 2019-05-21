@@ -1,37 +1,37 @@
 <!DOCTYPE html>
+<html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="navbarr.js"></script>
 </head>
 <!-- HEAD // Place SCRIPTS here!-->
-<html>
+
+
+
 
 <body>
 
     <div class='container'>
-        <img class="background-img" src="assets\images\SplitDollar.png" alt="">
-
-
-
-        <nav id="navbar">
-            <ul>
-                <li>
-
-                </li>
-            </ul>
+        <div class="hero">
             <img src="assets\images\SplitDollar.png" alt="">
-            <a href="#">Blog</a>
-            <a href="#">Share</a>
-            <a href="#">FAQ</a>
-            <a href="#">Sign In</a>
+        </div>
+        <nav id="navbar">
+            <a href="index.html"><img src="assets\images\SplitDollar.png" alt=""></a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Share.html">Share</a>
         </nav>
 
 
         <!-- Navigation-->
 
-        <div class="content">
+        <div class="content page-content">
             <div class="header">
                 <h1>Easy way to split the bill</h1>
                 <h2>Calculate who owes what</h2>
@@ -41,7 +41,7 @@
 
             <div class="middle">
                 <div class="examplerow">
-                    <div class="example1">
+                    <div class="example start">
                         <h2>Manage debts with family or friends</h2>
                         <p>Split the bill is the share bills with friends or family. No excuses. Totally free.</p>
                     </div>
@@ -53,19 +53,19 @@
                 </div>
                 <!-- Row 1 -->
                 <div class="examplerow">
-                    <div class="example2">
-                        <h2>Perfect Example</h2>
-                        <p>Tuck, Dan, and Andrew go bowling on the weekend. Tuck pays the shoes; Dan pays the lane; Andrew pays for snacks.</p>
-                    </div>
-                    <!-- Ex. 2 Text -->
                     <div class="img left">
                         <img src="assets/images/bowling.jpg">
                     </div>
                     <!-- Ex. 2 Image-->
+                    <div class="example">
+                        <h2>Perfect Example</h2>
+                        <p>Tuck, Dan, and Andrew go bowling on the weekend. Tuck pays the shoes; Dan pays the lane; Andrew pays forsnacks.</p>
+                    </div>
+                    <!-- Ex. 2 Text -->
                 </div>
                 <!-- Row 2 -->
                 <div class="examplerow">
-                    <div class="example3">
+                    <div class="example">
                         <h2>Split it</h2>
                         <p>So now to make the seperated weekend costs evenly we use Split the bill! Tuck creates a Split and adds his expenses.</p>
                     </div>
@@ -77,19 +77,19 @@
                 </div>
                 <!-- Row 3 -->
                 <div class="examplerow">
-                    <div class="example4">
-                        <h2>Sharing the bill</h2>
-                        <p>Once he's done, Tuck sends an email with the link to Split the bill. Now Dan and Andrew include their expenses.</p>
-                    </div>
-                    <!-- Ex. 4 Text -->
                     <div class="img left">
                         <img src="assets/images/share.jpg">
                     </div>
                     <!-- Ex. 4 Image -->
+                    <div class="example">
+                        <h2>Sharing the bill</h2>
+                        <p>Once he's done, Tuck sends an email with the link to Split the bill. Now Dan and Andrew include their expenses.</p>
+                    </div>
+                    <!-- Ex. 4 Text -->
                 </div>
                 <!-- Row 4 -->
                 <div class="examplerow">
-                    <div class="example5">
+                    <div class="example end">
                         <h2>Settling Costs</h2>
                         <p>Tuck, Dan, and Andrew can now see how much they owe and to who. They can now settle the costs and keep bowling the weekends with no end.</p>
                     </div>
@@ -109,14 +109,6 @@
                     <p>No apps, Everything online with a decent browser. Works on any device. </p>
                     <img src="assets/images/phone-tablet-pc.jpg">
                 </div>
-                <div class="carousel">
-                    <button class="left"></button>
-                    <img src="assets\images\myreceipts.jpeg" alt="" class="carouselimg">
-                    <img src="assets\images\ScanReceipt.jpeg" alt="" class="carouselimg">
-                    <img src="assets\images\scanning.gif" alt="" class="carouselimg">
-                    <img src="assets\images\sortpurchases.gif" alt="" class="carouselimg">
-                    <button class="right"></button>
-                </div>
                 <!-- Unfooter Text/Image Container-->
                 <div class="unfooter button">
                     <button>Split it</button>
@@ -135,7 +127,24 @@
         <p>© 2019, Tucker Wray && Daniel Viera - WEBPT6</p>
     </footer>
     <!-- Footer -->
+    <script src="navbarr.js"></script>
 
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 <!-- BODY Container-->
 
