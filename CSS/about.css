@@ -194,9 +194,11 @@ nav a {
 }
 .create {
   margin: 30px 0;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid lightgray;
 }
 .create .creatorpic {
   width: 48%;
