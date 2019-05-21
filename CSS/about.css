@@ -181,21 +181,8 @@ nav img {
 nav a {
   text-decoration: none;
 }
-.background-img {
-  position: absolute;
-  z-index: -2;
-  opacity: 0.5;
-  height: 43%;
-  margin-top: 60px;
-  padding-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  max-width: 100%;
-}
 .header {
-  padding: 60px 0 75px 0;
+  padding: 45px 0;
   text-align: center;
   border-bottom: 1px solid lightgray;
 }
@@ -205,66 +192,28 @@ nav a {
 .header h2 {
   padding: 20px 0;
 }
-.header button {
-  margin: 40px 0 0 0;
-  border: 0;
-  color: white;
-  font-size: 3rem;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: 0;
-  background: linear-gradient(aqua, green);
-}
-.header button:hover {
-  background: linear-gradient(green, aqua);
-}
-.examplerow {
+.create {
   margin: 30px 0;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
-  padding-bottom: 30px;
 }
-.examplerow .img {
+.create .creatorpic {
   width: 48%;
 }
-.examplerow .example {
+.create .creator {
   width: 48%;
   margin: auto 0;
 }
-.examplerow .example p {
+.create .creator h2 {
   text-align: left;
 }
-h2 {
-  text-align: center;
+.create .creator p {
+  text-align: left;
 }
 p {
   position: sticky;
   text-align: center;
-}
-.unfooter {
-  text-align: center;
-}
-.unfooter img {
-  height: auto;
-  width: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.unfooter button {
-  margin: 40px 0 0 0;
-  border: 0;
-  color: white;
-  font-size: 3rem;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: 0;
-  background: linear-gradient(aqua, green);
-  margin: 40px 0;
-  padding: 15px 25px;
-}
-.unfooter button:hover {
-  background: linear-gradient(green, aqua);
 }
