@@ -207,6 +207,12 @@ nav a {
   width: 48%;
   margin: auto 0;
 }
+.create .creator h2 {
+  text-align: left;
+}
+.create .creator p {
+  text-align: left;
+}
 p {
   position: sticky;
   text-align: center;
