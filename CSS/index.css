@@ -184,31 +184,36 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 9px double #4aaad4;
+  border-bottom: 9px solid #4aaad4;
   text-shadow: -1px -3px 4px #2d124f;
   z-index: 1;
-}
-#navbar a {
-  font-size: 3rem;
-  text-decoration: none;
-  color: lightgray;
-}
-#navbar a a:link {
-  color: lightgray;
-}
-#navbar a a:visited {
-  color: lightgray;
 }
 #navbar img {
   max-width: 10rem;
   max-height: 10rem;
 }
-a:hover,
-a img:hover {
+#navbar nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  align-items: center;
+}
+#navbar a {
+  color: lightgray;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3rem;
+}
+#navbar a:link,
+#navbar a:visited {
+  color: lightgray;
+}
+#navbar a:hover,
+#navbar a img:hover {
   text-shadow: -0.7px -0.7px 1px #31b44c, 0.8px 0.8px 1px steelblue, 0.9px 0.9px 1px steelblue, 1.1px 1.1px 1px steelblue, 1.3px 1.3px 1px steelblue, 1.5px 1.5px 1px whitesmoke, 1.7px 1.7px 1px whitesmoke, 1.9px 1.9px 1px whitesmoke, 2px 2px 1px whitesmoke, 2.2px 2.2px 1px #31b44c;
 }
-a:active,
-a img:active {
+#navbar a:active,
+#navbar a img:active {
   color: chartreuse;
   text-shadow: -0.7px -0.7px 1px #31b44c, -0.8px -0.8px 1px darkgray, -0.9px -0.9px 1px darkgray, -1.1px -1.1px 1px darkgray, -1.3px -1.3px 1px darkgray, -1.5px -1.5px 1px darkgray, -1.7px -1.7px 1px darkgray, -1.9px -1.9px 1px darkgray, -2px -2px 1px darkgray, -2.2px -2.2px 1px #31b44c;
 }
@@ -221,7 +226,7 @@ a img:active {
   position: absolute;
   z-index: -2;
   opacity: 0.5;
-  height: 43%;
+  height: 100%;
   margin-top: 60px;
   padding-bottom: 10px;
   margin-left: auto;
@@ -270,6 +275,9 @@ a img:active {
 .examplerow .example {
   width: 48%;
   margin: auto 0;
+}
+.examplerow .example h2 {
+  text-align: left;
 }
 .examplerow .example p {
   text-align: left;
