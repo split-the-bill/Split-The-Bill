@@ -249,6 +249,8 @@ a img:active {
   cursor: pointer;
   outline: 0;
   background: linear-gradient(aqua, green);
+  width: auto;
+  padding: 15px 25px;
 }
 .header button:hover {
   background: linear-gradient(green, aqua);
@@ -299,6 +301,7 @@ p {
   background: linear-gradient(aqua, green);
   margin: 40px 0;
   padding: 15px 25px;
+  width: auto;
 }
 .unfooter button:hover {
   background: linear-gradient(green, aqua);
