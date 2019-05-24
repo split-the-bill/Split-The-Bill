@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="parallax.js"></script>
+    <script defer="defer" src="displayimage.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
 </head>
 <!-- HEAD // Place SCRIPTS here!-->
@@ -39,23 +41,23 @@
 
             <div class="middle">
                 <div class="examplerow">
-                    <div data-img="1" class="example start">
+                    <div id="text" data-imgnum="1" class="text example start">
                         <h2>Manage debts with family or friends</h2>
                         <p>Split the bill is the share bills with friends or family. No excuses. Totally free.</p>
                     </div>
                     <!-- Ex. 1 Text -->
                     <div class="img right">
-                        <img data-img="1" class="hidden" src="assets/images/split-dollar.jpg">
+                        <img id="img" data-imgnum="1" class="hidden" src="assets/images/split-dollar.jpg">
                     </div>
                     <!-- Ex. 1 Image-->
                 </div>
                 <!-- Row 1 -->
                 <div class="examplerow">
                     <div class="img left">
-                        <img data-img="2" class="hidden" src="assets/images/bowling.jpg">
+                        <img id="img" data-imgnum="2" class="hidden" src="assets/images/bowling.jpg">
                     </div>
                     <!-- Ex. 2 Image-->
-                    <div data-img="2" class="example">
+                    <div id="text" data-imgnum="2" class="example">
                         <h2>Perfect Example</h2>
                         <p>Tuck, Dan, and Andrew go bowling on the weekend. Tuck pays the shoes; Dan pays the lane; Andrew pays forsnacks.</p>
                     </div>
@@ -63,23 +65,23 @@
                 </div>
                 <!-- Row 2 -->
                 <div class="examplerow">
-                    <div data-img="3" class="example">
+                    <div id="text" data-imgnum="3" class="example">
                         <h2>Split it</h2>
                         <p>So now to make the seperated weekend costs evenly we use Split the bill! Tuck creates a Split and adds his expenses.</p>
                     </div>
                     <!-- Ex.3 Text -->
                     <div class="img right">
-                        <img data-img="3" class="hidden" src="assets/images/recipt.jpg">
+                        <img id="img" data-imgnum="3" class="hidden" src="assets/images/recipt.jpg">
                     </div>
                     <!-- Ex.3 Image -->
                 </div>
                 <!-- Row 3 -->
                 <div class="examplerow">
                     <div class="img left">
-                        <img data-img="4" class="hidden" src="assets/images/share.jpg">
+                        <img id="img" data-imgnum="4" class="hidden" src="assets/images/share.jpg">
                     </div>
                     <!-- Ex. 4 Image -->
-                    <div data-img="4" class="example">
+                    <div id="text" data-imgnum="4" class="example">
                         <h2>Sharing the bill</h2>
                         <p>Once he's done, Tuck sends an email with the link to Split the bill. Now Dan and Andrew include their expenses.</p>
                     </div>
@@ -87,13 +89,13 @@
                 </div>
                 <!-- Row 4 -->
                 <div class="examplerow">
-                    <div data-img="5" class="example end">
+                    <div id="text" data-imgnum="5" class="example end">
                         <h2>Settling Costs</h2>
                         <p>Tuck, Dan, and Andrew can now see how much they owe and to who. They can now settle the costs and keep bowling the weekends with no end.</p>
                     </div>
                     <!-- Ex. 5 Text -->
-                    <div class="img right">
-                        <img data-img="5" class="hidden" src="assets/images/handshake.jpg">
+                    <div id="img" class="img right">
+                        <img data-imgnum="5" class="hidden" src="assets/images/handshake.jpg">
                     </div>
                     <!-- Ex. 5 Image-->
                 </div>
@@ -125,7 +127,7 @@
         <p>© 2019, Tucker Wray && Daniel Viera - WEBPT6</p>
     </footer>
     <!-- Footer -->
-    <script src="navbarr.js"></script>
+    <script src="navbar.js"></script>
 
     <script>
         // window.onscroll = function() {
