@@ -11,6 +11,7 @@
     <script src="displayimage.js"></script>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+
 </head>
 <!-- HEAD // Place SCRIPTS here!-->
 
@@ -18,11 +19,11 @@
 <body>
 
     <div class='container'>
-        <div class="hero">
-            <img src="assets\images\SplitDollar.png" alt="">
+        <div class="hero" >
+            <img src="assets\images\SplitDollar.png" alt="" >
         </div>
         <nav id="navbar">
-            <a href="index.html"><img src="assets\images\SplitDollar.png" alt=""></a>
+            <a href="index.html"><img src="assets\images\SplitDollar.png" alt="" id="logo"></a>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="Share.html">Share</a>
@@ -47,7 +48,9 @@
                     </div>
                     <!-- Ex. 1 Text -->
                     <div class="img right">
+
                         <img id="img" data-imgnum="1" class="hidden" src="assets/images/split-dollar.jpg">
+
                     </div>
                     <!-- Ex. 1 Image-->
                 </div>
@@ -67,7 +70,8 @@
                 <div class="examplerow">
                     <div id="text" data-imgnum="3" class="example">
                         <h2>Split it</h2>
-                        <p>So now to make the seperated weekend costs evenly we use Split the bill! Tuck creates a Split and adds his expenses.</p>
+                        <p>So now to make the seperated weekend costs evenly we use Split the bill! Tuck creates a Split
+                            and adds his expenses.</p>
                     </div>
                     <!-- Ex.3 Text -->
                     <div class="img right">
@@ -91,7 +95,8 @@
                 <div class="examplerow">
                     <div id="text" data-imgnum="5" class="example end">
                         <h2>Settling Costs</h2>
-                        <p>Tuck, Dan, and Andrew can now see how much they owe and to who. They can now settle the costs and keep bowling the weekends with no end.</p>
+                        <p>Tuck, Dan, and Andrew can now see how much they owe and to who. They can now settle the costs
+                            and keep bowling the weekends with no end.</p>
                     </div>
                     <!-- Ex. 5 Text -->
                     <div id="img" class="img right">
@@ -105,7 +110,7 @@
 
             <div class="unfooter">
                 <div class="unfooter container">
-                    <h2>Split the bill works on all platforms 💵</h2>
+                    <h2 id="moneyz">Split the bill works on all platforms 💵</h2>
                     <p>No apps, Everything online with a decent browser. Works on any device. </p>
                     <img src="assets/images/phone-tablet-pc.jpg">
                 </div>
@@ -128,7 +133,6 @@
     </footer>
     <!-- Footer -->
     <script src="navbar.js"></script>
-
     <script>
         // window.onscroll = function() {
         //     myFunction()
@@ -145,6 +149,8 @@
         //     }
         // }
     </script>
+    <script src="./Events.js"></script>
+  
 </body>
 <!-- BODY Container-->
 
