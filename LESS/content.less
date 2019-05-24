@@ -6,17 +6,47 @@
     border-bottom: 1px solid lightgray;
     padding-bottom: 30px;
     
+    @media @mobile{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .left{
+        @media @mobile{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+    }
     .img {
         width: 48%;
-    }
+        @media @mobile{
+            width: 100%;
+            height: auto;
+        }
+        .hidden{
+            opacity:1;
+            }
+                              
+         .fade-in-element {
+             animation: fade-in 1.4s;
+            }
+                                  
+         .show{
+             opacity:0;
+           }
+          .texthilight{
+            background-color:chartreuse;
+            font-size:4rem;
+           }
     
     .example {
         width: 48%;
         margin: auto 0;
-
-        h2 {
-            text-align: left;
-        }
+        @media @mobile{
+            width: 100%;
         
         p {
             text-align: left;
@@ -24,3 +54,13 @@
     }
 
 }
+    }
+}
+
+
+ @keyframes fade-in {
+     from {opacity: 0; transform: scale(.7,.7);}
+     to {opacity: 1;}
+ }
+
+            
