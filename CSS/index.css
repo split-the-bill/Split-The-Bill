@@ -168,24 +168,65 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+button {
+  width: 10rem;
+  height: auto;
+}
+.hero {
+  background-color: white;
+  padding: 30px;
+}
+#navbar {
+  overflow: hidden;
+  padding: 10px 16px;
+  background: #555555;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 9px solid #4aaad4;
+  text-shadow: -1px -3px 4px #2d124f;
+  z-index: 1;
+}
+#navbar img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+#navbar nav {
   display: flex;
   justify-content: space-around;
   font-size: 3rem;
   align-items: center;
 }
-nav img {
-  max-width: 10rem;
-  max-height: 10rem;
-}
-nav a {
+#navbar a {
+  color: lightgray;
+  text-align: center;
   text-decoration: none;
+  font-size: 3rem;
+}
+#navbar a:link,
+#navbar a:visited {
+  color: lightgray;
+}
+#navbar a:hover,
+#navbar a img:hover {
+  text-shadow: -0.7px -0.7px 1px #31b44c, 0.8px 0.8px 1px steelblue, 0.9px 0.9px 1px steelblue, 1.1px 1.1px 1px steelblue, 1.3px 1.3px 1px steelblue, 1.5px 1.5px 1px whitesmoke, 1.7px 1.7px 1px whitesmoke, 1.9px 1.9px 1px whitesmoke, 2px 2px 1px whitesmoke, 2.2px 2.2px 1px #31b44c;
+}
+#navbar a:active,
+#navbar a img:active {
+  color: chartreuse;
+  text-shadow: -0.7px -0.7px 1px #31b44c, -0.8px -0.8px 1px darkgray, -0.9px -0.9px 1px darkgray, -1.1px -1.1px 1px darkgray, -1.3px -1.3px 1px darkgray, -1.5px -1.5px 1px darkgray, -1.7px -1.7px 1px darkgray, -1.9px -1.9px 1px darkgray, -2px -2px 1px darkgray, -2.2px -2.2px 1px #31b44c;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 .background-img {
   position: absolute;
   z-index: -2;
   opacity: 0.5;
-  height: 43%;
+  height: 100%;
   margin-top: 60px;
   padding-bottom: 10px;
   margin-left: auto;
@@ -214,6 +255,8 @@ nav a {
   cursor: pointer;
   outline: 0;
   background: linear-gradient(aqua, green);
+  width: auto;
+  padding: 15px 25px;
 }
 .header button:hover {
   background: linear-gradient(green, aqua);
@@ -232,6 +275,9 @@ nav a {
 .examplerow .example {
   width: 48%;
   margin: auto 0;
+}
+.examplerow .example h2 {
+  text-align: left;
 }
 .examplerow .example p {
   text-align: left;
@@ -264,6 +310,7 @@ p {
   background: linear-gradient(aqua, green);
   margin: 40px 0;
   padding: 15px 25px;
+  width: auto;
 }
 .unfooter button:hover {
   background: linear-gradient(green, aqua);
